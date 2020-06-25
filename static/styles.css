@@ -1,0 +1,187 @@
+body {
+    background: #F7F7F7;
+    font-family: 'Raleway', sans-serif;
+}
+
+.scroll-auto {
+    position: absolute;
+    top: 590px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: #FD4B88;
+    border: solid 1px #FD4B88;
+    box-shadow: 1px 1px 5px #FD4B88;
+}
+
+.banner {
+    padding: 100px;
+    background: #FFFFFF ;
+    height: 550px;
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px #EFF0F1;
+    margin-bottom: 100px;;
+}
+
+#image{
+    float: right;
+}
+
+#title{
+    font-weight: bold;
+    font-size: 50px;
+    color: #515151;
+}
+
+.navbar{
+    padding: 10px;
+}
+
+a{
+    color: #515151;
+}
+
+
+#img-box{
+    float: left;
+    border-right: solid 20px white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #323232;
+}
+
+.git-buttom {
+    background: #FFC903;
+    border: solid 1px #FFC903;
+    font-weight: bold;
+    color: white;
+    size: 20px;
+    width: 140px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 5px #FFC903;
+}
+
+.facebook-buttom {
+    background: #49AAEE;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+    size: 20px;
+    border: solid 1px #49AAEE;
+    width: 170px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px #49AAEE;
+
+}
+
+.separador {
+    background: #F67DAC;
+    width: 100px;
+    color: #FFFFFF;
+    height: 9px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.un-poco-sobre-mi{
+    background: white;
+    border-radius: 5px;
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px #EFF0F1;
+}
+
+#sobre-mi {
+    font-weight: bold;
+    size: 1px;
+    color: #515151;
+}
+
+a {
+    margin-right: 20px;
+}
+
+
+
+
+
+@media screen and (max-width:375px) {
+
+    #image{
+        display: none;
+    }
+
+    .banner {
+        padding: 10px;
+        background: #FFFFFF ;
+        height: 60%;
+        border-radius: 5px;
+        box-shadow: 1px 5px 10px #EFF0F1;
+        margin-bottom: 50px;;
+    }
+    .elements-container{
+        display: none;
+    }
+
+    .git-buttom {
+        background: #FFC903;
+        border: solid 1px #FFC903;
+        font-weight: bold;
+        color: white;
+        size: 20px;
+        width: 100px;
+        border-radius: 15px;
+        padding: 5px;
+        margin-right: 20px;
+        box-shadow: 2px 2px 5px #FFC903;
+        margin-bottom: 15px;
+    }
+
+    .facebook-buttom {
+        background: #49AAEE;
+        font-weight: bold;
+        color: white;
+        border-radius: 15px;
+        size: 20px;
+        border: solid 1px #49AAEE;
+        width: 130px;
+        padding: 5px;
+        box-shadow: 2px 2px 5px #49AAEE;
+    }
+
+    .un-poco-sobre-mi{
+        background: white;
+        border-radius: 5px;
+        padding: 25px;
+        border-radius: 5px;
+        box-shadow: 1px 5px 10px #EFF0F1;
+    }
+
+    #img-box{
+        margin-bottom: 20px;
+    }
+    
+    .scroll-auto {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: inline;
+    }
+
+}
+@media screen and (max-width:1024px) and (min-width:640px) {
+
+}
+@media screen and (min-width:1024px) {
+    /* reglas CSS */
+}
+
+.navbar-toggler {
+    display: none;
+}

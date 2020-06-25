@@ -1,0 +1,75 @@
+
+{% extends 'base.html' %}
+
+
+
+{%block heder%}
+<link rel="stylesheet" href="/static/flex.css">
+{%endblock%}
+
+
+{% block contend %}
+<div class="root">
+
+    <button id="btn-scroll hvr-bounce-in" class="scroll-auto">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAAl0lEQVRYhe3UMQ6CQBBAUQ5gjcTTWnpAI3qaZwEFISgCs5CY+cm28/9MsVWVJEmSjMDpsNm44oVLAfkZd9w+1qHV0aIJlDej2dOXQN1XirrEYHN4zs6MjFgsj4xYLY+I2CzfEhEmXxMRLl8SUUz+S0Rx+beI3eSDiPGvVuT3nIsYXmKfzSciGjz6t8/mExE16kPkSfI3vAHF/sYUX9Is7QAAAABJRU5ErkJggg==">        
+    </button>
+    <div class="banner">
+        <div class="container">
+            <img id="image" src="https://cdn.dribbble.com/users/3281732/screenshots/6852350/samji_illustrator.jpeg" width="550px" alt="" srcset="">
+            <h1 id="title">HOLA MUNDO    !</h1>
+            <div class="separador">-  </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sequi facere quis corrupti ipsum aliquam mollitia! Nulla molestiae nam a maxime harum eligendi neque iure magnam, cupiditate, accusamus quibusdam ex.</p>
+            <div class="buttons-container">
+                <a href="https://github.com/SirRiuz/" target="_blank">
+                    <button class="git-buttom hvr-bounce-in"><img src="/static/img/git.png" alt="" srcset=""> GitHub</button>
+                </a>
+                <a href="">
+                    <button class="hvr-bounce-in facebook-buttom"><img src="/static/img/focabook-icon.png" alt="" srcset=""> Fcaebook</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="un-poco-sobre-mi">
+        <div class="container"> 
+            <h3 id="sobre-mi">Un poco sobre mi</h3>
+            <div class="separador">-  </div>
+
+            <div class="box-sobre-mi">
+                <img id="img-box" src="https://miro.medium.com/max/1600/0*9PyyNvrO2PcD3KuU.png" width="250px" alt="" srcset="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos itaque ullam molestias, fugit vitae tenetur laudantium quidem, accusamus deleniti beatae error nemo natus eius corporis exercitationem pariatur, nam magni facere?
+                Soluta quos ducimus temporibus minus suscipit error a quo? Consectetur doloribus amet dolor exercitationem mollitia dolores sunt aliquam molestiae vero omnis, modi esse numquam deleniti eaque nesciunt at deserunt sed.
+                Officiis quod ducimus cum illo voluptates culpa maxime, tempora, saepe exercitationem soluta possimus deserunt minus quas voluptas dolorem architecto. Quibusdam corrupti iste, molestias nam omnis eaque doloribus. Quibusdam, eaque nihil.
+                Quas illum sint blanditiis at ad rem repellat cumque deleniti ratione harum tenetur alias minus facere animi, quia expedita quibusdam optio! Necessitatibus repudiandae id, quibusdam vel pariatur atque ab rerum!
+                Ea repellat voluptas ex nemo, aliquid aut maiores corporis qui non facilis delectus nobis nam, natus pariatur assumenda id fugit. Optio nisi, facilis laudantium totam dolorem non rerum iusto veritatis.
+                Iure odio beatae deserunt ut vel! Sunt ipsam ut, fugiat animi fuga quibusdam ipsa, itaque tenetur, vel voluptatibus iusto eaque sapiente! Qui libero architecto autem esse laborum sint odit totam.
+                Voluptatibus reprehenderit vitae enim, praesentium fugiat repellat similique nemo minima eligendi molestiae sequi laborum nobis nesciunt quo explicabo nisi dolores dolorum placeat dolor sunt voluptas! Voluptates doloremque corporis saepe aliquid!
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="git-box-container">
+        <div class="container">
+            <h3 id="git-repos">Mis repositorios de GitHub</h3>
+            <div class="git-container">
+                {%for item in name%}
+                    <a href="https://github.com/SirRiuz/{{ item }}" class="hvr-bounce-out" target="_blank">
+                        <div class="cad-contend">
+                            <h5>{{ item }}</h5>
+                        </div>
+                    </a>
+
+                {%endfor%}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{%endblock%}
+
